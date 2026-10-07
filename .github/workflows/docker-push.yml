@@ -26,7 +26,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          Image: ${{ secrets.DOCKERHUB_USERNAME }}/svelte-app
+          image: ${{ secrets.DOCKERHUB_USERNAME }}/svelte-app
           tags: |
             type=raw,value=latest
             type=sha,value=short
